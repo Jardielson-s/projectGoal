@@ -6,3 +6,6 @@ manage requests, routes and urls, among other features
 
 use mongo to storege datas
 ### npm inatall mongoose
+
+run the project with nodemon
+### npm install -g nodemon
