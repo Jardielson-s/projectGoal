@@ -3,3 +3,6 @@ create file package
 
 manage requests, routes and urls, among other features
 ### npm install express
+
+use mongo to storege datas
+### npm inatall mongoose
