@@ -1,6 +1,37 @@
 const app = require('./server');
 
+const metas = require('./model/db');
 
-app.get("/",(req,res) => {
-    res.send("ola dev");
+app.post("/metas",async (req,res) => {
+    const {name, description, status} = req.body;
+
+ try{
+    await metas.create({
+        name: name,
+        decription: description,
+        status: status
+    }).then((metas) => {
+        return res.status(200).json(metas);
+    })
+    .catch((err)=>{
+        return res.status(501).json(err);
+    });
+ }catch(err){
+   return res.status(500).json(err);
+}
+});
+
+app.get("/listar",async (req,res)=>{
+     
+try{
+    const datas = await metas.find()
+    .then((datas)=>{
+        return res.status(200).json(datas);
+    })
+    .catch((err)=>{
+        return res.status(404).json(err);
+    })
+}catch(err){
+    return res.status(500).json(err);
+}
 });

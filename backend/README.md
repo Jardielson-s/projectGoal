@@ -9,3 +9,7 @@ use mongo to storege datas
 
 run the project with nodemon
 ### npm install -g nodemon
+### npm install mongodb
+
+allow access to api
+### npm install cors
