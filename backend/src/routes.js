@@ -17,7 +17,7 @@ app.post("/metas",async (req,res) => {
         return res.status(501).json(err);
     });
  }catch(err){
-   return res.status(500).json(err);
+    return res.status(500).json("error to connect with databse");
 }
 });
 
@@ -29,9 +29,9 @@ try{
         return res.status(200).json(datas);
     })
     .catch((err)=>{
-        return res.status(404).json(err);
+        return res.status(404).json("error when finding file");
     })
 }catch(err){
-    return res.status(500).json(err);
+    return res.status(500).json("error to connect with databse");
 }
 });
