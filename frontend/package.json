@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jardielson-s/projectGoal.git"
+  },
+  "author": "jardielson silva ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jardielson-s/projectGoal/issues"
+  },
+  "homepage": "https://github.com/Jardielson-s/projectGoal#readme",
+  "dependencies": {
+    "next": "^10.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
